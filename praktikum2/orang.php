@@ -1,10 +1,14 @@
 <?php
+    class orang {
+        public $nama;
 
-class Orang{
-    public $nama;
+        public function __construct($nama)
+        {
+            $this->nama = $nama;
+        }
 
-    public function ucapkanSalam (){
-        echo "Assalamualaikum perkenalkan nama saya ". $this->nama;
-        
+        public function ucapSalam(){
+            echo "HALO SEMUA NAMA SAYA" . $this->nama . "<br>";
+        }
+    
     }
-}
